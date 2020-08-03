@@ -1,0 +1,18 @@
+# rsync-homedir-excludes
+#
+# A list of files to exclude when backing up *nix home directories using rsync.
+#
+# Can tailor as needed
+#
+# USAGE:
+#	rsync -aAV --exclude-from=rsync-homedir-excludes.txt /mnt/Computer/home /mnt/Data/<backup-dir>
+
+################################################
+# These directories may definitely be excluded #
+################################################
+
+# Session-specific
+/.Trash
+.Trash-1*
+.local/share/Trash
+/Trash

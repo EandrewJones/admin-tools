@@ -26,6 +26,5 @@ sudo ufw allow rstudio-server
 # check Rstudio-server version
 sudo rstudio-server verify-installation
 
-# Add forwarding from port 80 to 8787 so that
-# the server can be hosted via a http dns
-sudo iptables -A PREROUTING -t nat -i enp3s0 -p tcp --dport 80 -j REDIRECT --to-port 8787
+# remove debfile
+sudo rm rstudio-server-1.3.1056-amd64.deb
